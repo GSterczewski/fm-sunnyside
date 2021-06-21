@@ -1,68 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  About
-  Services
-  Projects
-  Contact
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <h1>We are creatives</h1>
+    </header>
+    <main class="main">
+      <figure class="main__section">
+        <picture>
+          <source
+            media="(min-width:800px)"
+            srcset="images/desktop/image-transform.jpg"
+          />
+          <source
+            media="(max-width:799px)"
+            srcset="images/mobile/image-transform.jpg"
+          />
+          <img class="img" src="images/mobile/image-transform.jpg" />
+        </picture>
+      </figure>
+      <article class="main__section">
+        <h2>Transform your brand</h2>
+        <p>
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+        </p>
+        <a href="#">Learn more</a>
+      </article>
+      <figure class="main__section">
+        <picture>
+          <source
+            media="(min-width:800px)"
+            srcset="images/desktop/image-stand-out.jpg"
+          />
+          <source
+            media="(max-width:799px)"
+            srcset="images/mobile/image-stand-out.jpg"
+          />
+          <img class="img" src="images/mobile/image-stand-out.jpg" />
+        </picture>
+      </figure>
+      <article class="main__section">
+        <h2>Stand out to the right audience</h2>
+        <p>
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we’ll build and extend
+          your brand in digital places.
+        </p>
+        <a href="#">Learn more </a>
+      </article>
+      <article class="main__section article">
+        <picture>
+          <source
+            media="(min-width:800px)"
+            srcset="images/desktop/image-graphic-design.jpg"
+          />
+          <source
+            media="(max-width:799px)"
+            srcset="images/mobile/image-graphic-design.jpg"
+          />
+          <img
+            class="img article-background"
+            src="images/mobile/image-graphic-design.jpg"
+          />
+        </picture>
+        <div class="article-content">
+          <h2>Graphic design</h2>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+      </article>
+      <article class="main__section article">
+        <picture>
+          <source
+            media="(min-width:800px)"
+            srcset="images/desktop/image-photography.jpg"
+          />
+          <source
+            media="(max-width:799px)"
+            srcset="images/mobile/image-photography.jpg"
+          />
+          <img
+            class="img article-background"
+            src="images/mobile/image-photography.jpg"
+          />
+        </picture>
+        <div class="article-content">
+          <h2>Photography</h2>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </article>
+    </main>
+    <section class="testimonials-section">
+      <h3>Client testimonials</h3>
+      <ul>
+        <li>
+          <blockquote>
+            <img class="testimonial__picture" src="./images/image-emily.jpg" />
+            <p class="testimonial__text">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <footer class="testimonial__footer">
+              <cite class="testimonial__author">Emily R.</cite>
+              <cite class="testimonial__role">Marketing Director</cite>
+            </footer>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote>
+            <img class="testimonial__picture" src="./images/image-thomas.jpg" />
+            <p class="testimonial__text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <footer class="testimonial__footer">
+              <cite class="testimonial__author">Thomas S.</cite>
+              <cite class="testimonial__role">Chief Operating Officer</cite>
+            </footer>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote>
+            <img class="testimonial__picture" src="./images/image-jennie.jpg" />
+            <p class="testimonial__text">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <footer class="testimonial__footer">
+              <cite class="testimonial__author">Jennie F.</cite>
+              <cite class="testimonial__role">Business Owner</cite>
+            </footer>
+          </blockquote>
+        </li>
+      </ul>
+    </section>
+    <section class="gallery-section"></section>
+    <footer>
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </nav>
+      <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Pinterest</a>
+      </nav>
 
-  We are creatives
-
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </body>
 </html>
