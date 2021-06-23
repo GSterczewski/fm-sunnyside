@@ -1,8 +1,107 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0;
+}
+:root {
+  --horizontal-padding--mobile: 1rem;
+  --content-horizontal-padding: 3rem;
+  --content-text-space: 1.5rem;
+  --grayish-blue: hsl(210, 4%, 67%);
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+.button {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  width: max-content;
+  margin: var(--content-text-space) auto 0;
+}
+
+.img {
+  width: 100%;
+}
+.content-wrapper {
+  padding: var(--content-horizontal-padding) 1.5rem;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+.heading {
+  text-align: center;
+}
+
+/* ARTICLE SECTION */
+
+.article {
+  position: relative;
+}
+.article-background {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.article-content {
+  position: absolute;
+  z-index: 2;
+  bottom: 2rem;
+  left: 0;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials-section > .heading {
+  color: var(--dark-grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.testimonial__picture {
+  margin-bottom: 2rem;
+  border-radius: 50%;
+}
+.testimonial__text {
+  color: var(--very-dark-desaturated-blue);
+}
+.testimonial__author {
+  display: block;
+  font-style: normal;
+  font-weight: 900;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--very-dark-desaturated-blue);
+  font-size: 1.25rem;
+}
+.testimonial__role {
+  font-style: normal;
+  color: var(--grayish-blue);
+}
+
+/* FOOTER SECTION */
+.footer {
+  background-color: #94d6c8;
+}
+.footer > .heading {
+  color: var(--dark-desaturated-cyan);
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+.footer-navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.footer-link {
+  text-decoration: none;
+  color: var(--dark-desaturated-cyan);
 }
