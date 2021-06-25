@@ -12,12 +12,21 @@
   --grayish-blue: hsl(210, 4%, 67%);
   --dark-moderate-cyan: hsl(168, 34%, 41%);
   --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --font-barlow: "Barlow", sans-serif;
+  --font-fraunces: "Fraunces", serif;
+}
+
+body {
+  font-family: var(--font-barlow);
 }
 ul {
   list-style: none;
   padding: 0;
 }
-
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
 h2 {
   margin-bottom: 2rem;
 }
@@ -38,6 +47,7 @@ h2 {
 }
 .heading {
   text-align: center;
+  font-family: var(--font-fraunces);
 }
 
 /* ARTICLE SECTION */
