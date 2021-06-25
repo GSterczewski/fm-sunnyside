@@ -93,15 +93,21 @@ h2 {
 .footer > .heading {
   color: var(--dark-desaturated-cyan);
   font-size: 1.5rem;
-  margin: 2rem 0;
+  margin: 2rem 0 3rem;
 }
 .footer-navigation {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 .footer-link {
   text-decoration: none;
   color: var(--dark-desaturated-cyan);
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+  margin: 0 auto;
 }
