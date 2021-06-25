@@ -30,6 +30,7 @@ h1 {
 h2 {
   margin-bottom: 2rem;
 }
+
 .button {
   display: block;
   padding: 0.5rem 1.5rem;
@@ -48,6 +49,33 @@ h2 {
 .heading {
   text-align: center;
   font-family: var(--font-fraunces);
+}
+
+.header {
+  padding: 2rem;
+  color: white;
+  min-height: 400px;
+  height: 75vh;
+  background-image: url("./images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position-x: 50%;
+}
+.header__mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.header-navigation {
+  display: none;
+}
+.hamburger-button {
+  background-color: transparent;
+  border: none;
+}
+
+.header-arrow-icon {
+  display: block;
+  margin: 4rem auto 0 auto;
 }
 
 /* ARTICLE SECTION */
