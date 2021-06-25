@@ -124,6 +124,15 @@ h2 {
   color: var(--grayish-blue);
 }
 
+/* GALLERY SECTION */
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery-image {
+  width: 50%;
+}
+
 /* FOOTER SECTION */
 .footer {
   background-color: #94d6c8;
