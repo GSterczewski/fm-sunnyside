@@ -13,6 +13,8 @@
   --dark-moderate-cyan: hsl(168, 34%, 41%);
   --dark-desaturated-cyan: hsl(167, 40%, 24%);
   --dark-blue: hsl(198, 62%, 26%);
+  --yellow: hsl(51, 100%, 49%);
+  --soft-red: hsl(7, 99%, 70%);
   --font-barlow: "Barlow", sans-serif;
   --font-fraunces: "Fraunces", serif;
 }
@@ -35,8 +37,9 @@ h2 {
 
 .button {
   display: block;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   text-transform: uppercase;
+  text-decoration: none;
   width: max-content;
   margin: var(--content-text-space) auto 0;
 }
@@ -48,11 +51,35 @@ h2 {
   padding: var(--content-horizontal-padding) 1.5rem;
   text-align: center;
 }
-.heading {
+.heading,
+.button {
   text-align: center;
   font-family: var(--font-fraunces);
+  position: relative;
+  z-index: 2;
 }
-
+.button::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  opacity: 0.35;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  border-radius: 5px;
+  z-index: 1;
+  transition: opacity 0.25s ease-out;
+}
+.button-yellow::after {
+  background-color: var(--yellow);
+}
+.button-red::after {
+  background-color: var(--soft-red);
+}
+.button:hover::after,
+.button:focus:after {
+  opacity: 1;
+}
 .header {
   padding: 2rem;
   color: white;
@@ -104,6 +131,10 @@ h2 {
 }
 .no-background-section > .text {
   color: var(--very-dark-grayish-blue);
+}
+.no-background-section > .button {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 800;
 }
 
 .green-background-section {
