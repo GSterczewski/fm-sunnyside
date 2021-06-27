@@ -2,21 +2,25 @@ class MobileNavigation {
   constructor(elementID){
     this.element = document.getElementById(elementID);
     this.isVisible = false;
+    
   }
   show(){
     this.element.classList.add('mobile-navigation--visible');
+    this.isVisible = true;
   }
   hide(){
     this.element.classList.remove('mobile-navigation--visible');
+    this.isVisible = false;
   }
   toggle(){
     if(this.isVisible){
       this.hide()
-      this.isVisible = false;
     } else {
       this.show();
-      this.isVisible = true;
     }
+  }
+  getElement(){
+    return this.element;
   }
 }
 
