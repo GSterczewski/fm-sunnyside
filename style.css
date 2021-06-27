@@ -80,6 +80,9 @@ h2 {
 .button:focus:after {
   opacity: 1;
 }
+
+/* HEADER SECTION */
+
 .header {
   padding: 2rem;
   color: white;
@@ -98,7 +101,6 @@ h2 {
 .header-navigation--mobile {
   background-color: white;
   position: absolute;
-  /* top: 7rem; */
   left: 2rem;
   top: -100vh;
   width: calc(100% - 4rem);
@@ -125,14 +127,23 @@ h2 {
   position: absolute;
   top: -10px;
   right: -10px;
+  background-color: transparent;
 }
 
 .mobile-navlink {
   text-decoration: none;
   color: var(--dark-grayish-blue);
   font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  transition: all 0.35s ease-out;
 }
-
+.mobile-navlink:hover,
+.mobile-navlink:focus {
+  background-color: var(--yellow);
+  color: var(--very-dark-desaturated-blue);
+  outline: none;
+}
 .hamburger-button {
   background-color: transparent;
   border: none;
