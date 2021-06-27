@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 :root {
   --desktop-breakpoint: 1000px;
@@ -16,12 +17,15 @@
   --dark-blue: hsl(198, 62%, 26%);
   --yellow: hsl(51, 100%, 49%);
   --soft-red: hsl(7, 99%, 70%);
+  --social-icon-color: #2c7566;
   --font-barlow: "Barlow", sans-serif;
   --font-fraunces: "Fraunces", serif;
 }
 
 body {
   font-family: var(--font-barlow);
+  max-width: 1600px;
+  margin: 0 auto;
 }
 ul {
   list-style: none;
@@ -156,32 +160,6 @@ h2 {
   margin: 4rem auto 0 auto;
 }
 
-@media (min-width: 1000px) {
-  .hamburger-button {
-    display: none;
-  }
-  .header-navigation--mobile {
-    top: 0;
-    left: 40%;
-    padding: 2rem;
-    height: auto;
-    flex-direction: row;
-    width: 50%;
-    background-color: transparent;
-  }
-  .triangle {
-    display: none;
-  }
-  .mobile-navlink {
-    color: white;
-  }
-  .mobile-navlink:hover,
-  .mobile-nalvink:focus {
-    background-color: white;
-    color: var(--very-dark-desaturated-blue);
-  }
-}
-
 /* ARTICLE SECTION */
 
 .article {
@@ -272,10 +250,89 @@ h2 {
 .footer-link {
   text-decoration: none;
   color: var(--dark-desaturated-cyan);
+  fill: var(--social-icon-color);
 }
 .social-links {
   display: flex;
   justify-content: space-between;
   max-width: 50%;
   margin: 0 auto;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: white;
+  fill: white;
+}
+
+@media (min-width: 1000px) {
+  .hamburger-button {
+    display: none;
+  }
+  .header-navigation--mobile {
+    top: 0;
+    left: 40%;
+    padding: 2rem;
+    height: auto;
+    flex-direction: row;
+    width: 50%;
+    background-color: transparent;
+  }
+  .triangle {
+    display: none;
+  }
+  .mobile-navlink {
+    color: white;
+  }
+  .mobile-navlink:hover,
+  .mobile-navlink:focus {
+    background-color: white;
+    color: var(--very-dark-desaturated-blue);
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main__section {
+    width: 50%;
+  }
+  .no-background-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tile-1 {
+    order: 1;
+  }
+  .tile-2 {
+    order: 2;
+  }
+  .tile-3 {
+    order: 3;
+  }
+  .tile-4 {
+    order: 4;
+  }
+  .tile-5 {
+    order: 5;
+  }
+  .tile-6 {
+    order: 6;
+  }
+  .testimonials {
+    display: flex;
+  }
+  .gallery-section {
+    flex-wrap: nowrap;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-navigation {
+    width: 50%;
+  }
+  .social-links {
+    width: 20%;
+  }
 }
