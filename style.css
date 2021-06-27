@@ -2,6 +2,7 @@
   margin: 0;
 }
 :root {
+  --desktop-breakpoint: 1000px;
   --horizontal-padding--mobile: 1rem;
   --content-horizontal-padding: 3rem;
   --content-text-space: 1.5rem;
@@ -93,11 +94,12 @@ h2 {
   background-position-x: 50%;
   position: relative;
 }
-.header__mobile-menu {
+.mobile-menu {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4rem;
 }
+
 .header-navigation--mobile {
   background-color: white;
   position: absolute;
@@ -152,6 +154,32 @@ h2 {
 .header-arrow-icon {
   display: block;
   margin: 4rem auto 0 auto;
+}
+
+@media (min-width: 1000px) {
+  .hamburger-button {
+    display: none;
+  }
+  .header-navigation--mobile {
+    top: 0;
+    left: 40%;
+    padding: 2rem;
+    height: auto;
+    flex-direction: row;
+    width: 50%;
+    background-color: transparent;
+  }
+  .triangle {
+    display: none;
+  }
+  .mobile-navlink {
+    color: white;
+  }
+  .mobile-navlink:hover,
+  .mobile-nalvink:focus {
+    background-color: white;
+    color: var(--very-dark-desaturated-blue);
+  }
 }
 
 /* ARTICLE SECTION */
