@@ -51,6 +51,7 @@ h2 {
 
 .img {
   width: 100%;
+  display: block;
 }
 .content-wrapper {
   padding: var(--content-horizontal-padding) 1.5rem;
