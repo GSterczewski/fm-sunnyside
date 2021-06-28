@@ -103,7 +103,7 @@ h2 {
 .mobile-menu {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 }
 
 .header-navigation--mobile {
@@ -278,7 +278,7 @@ h2 {
 
   .header-navigation--mobile {
     top: 0;
-    left: 40%;
+    left: 50%;
     padding: 2rem;
     height: auto;
     flex-direction: row;
@@ -338,7 +338,7 @@ h2 {
     align-items: center;
   }
   .footer-navigation {
-    width: 50%;
+    width: 30%;
   }
   .social-links {
     width: 20%;
