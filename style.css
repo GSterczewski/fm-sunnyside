@@ -92,10 +92,11 @@ h2 {
   padding: 2rem;
   color: white;
   min-height: 400px;
-  height: 75vh;
-  background-image: url("./images/desktop/image-header.jpg");
+  height: 100vh;
+  background-image: url("./images/mobile/image-header.jpg");
   background-size: cover;
   background-position-x: 50%;
+
   position: relative;
 }
 .mobile-menu {
@@ -264,10 +265,16 @@ h2 {
   fill: white;
 }
 
+@media (min-width: 600px) {
+  .header {
+    background-image: url("./images/desktop/image-header.jpg");
+  }
+}
 @media (min-width: 1000px) {
   .hamburger-button {
     display: none;
   }
+
   .header-navigation--mobile {
     top: 0;
     left: 40%;
