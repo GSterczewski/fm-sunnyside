@@ -5,11 +5,11 @@ class MobileNavigation {
     
   }
   show(){
-    this.element.classList.add('mobile-navigation--visible');
+    this.element.classList.add('header__navigation--visible');
     this.isVisible = true;
   }
   hide(){
-    this.element.classList.remove('mobile-navigation--visible');
+    this.element.classList.remove('header__navigation--visible');
     this.isVisible = false;
   }
   toggle(){
