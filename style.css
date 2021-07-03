@@ -199,11 +199,13 @@ h2 {
   color: var(--dark-blue);
 }
 /* TESTIMONIALS SECTION */
+
 .testimonials-section > .heading {
   color: var(--dark-grayish-blue);
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+
 .testimonial__picture {
   margin-bottom: 2rem;
   border-radius: 50%;
@@ -266,12 +268,18 @@ h2 {
   fill: white;
 }
 
+@media (max-width: 600px) {
+}
 @media (min-width: 600px) {
   .header {
     background-image: url("./images/desktop/image-header.jpg");
   }
 }
 @media (min-width: 1000px) {
+  .testimonial {
+    transform: translate(-2000px);
+  }
+
   .hamburger-button {
     display: none;
   }
@@ -356,9 +364,39 @@ h2 {
   transform: translateY(0px);
 }
 
+.fadein-heading {
+  opacity: 0.5;
+  transition: opacity 0.35s ease-out;
+}
+.fadein-heading--active {
+  opacity: 1;
+}
+
 .floating-arrow {
   opacity: 0;
-  animation: floating 1s ease-in-out 1s forwards;
+  animation: floating 1s ease-in-out 1.2s forwards;
+}
+
+.swiping-element {
+  animation: swipeRight 0.5s ease-out forwards;
+}
+.swiping-element-1 {
+  animation-delay: 0.5s;
+}
+.swiping-element-2 {
+  animation-delay: 0.3s;
+}
+.swiping-element-3 {
+  animation-delay: 0s;
+}
+
+@keyframes swipeRight {
+  0% {
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 @keyframes floating {
   0% {
