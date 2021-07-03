@@ -179,8 +179,12 @@ h2 {
   z-index: 2;
   bottom: 2rem;
   left: 0;
+  width: 100%;
 }
-
+.text {
+  max-width: 75ch;
+  margin: 0 auto;
+}
 .no-background-section {
   color: var(--very-dark-desaturated-blue);
 }
@@ -212,6 +216,8 @@ h2 {
 }
 .testimonial__text {
   color: var(--dark-grayish-blue);
+  max-width: 500px;
+  margin: 0 auto;
 }
 .testimonial__author {
   display: block;
@@ -338,6 +344,7 @@ h2 {
   .main__section--tile-6 {
     order: 6;
   }
+
   .testimonials {
     display: flex;
   }
