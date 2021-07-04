@@ -110,7 +110,8 @@ h2 {
   background-color: white;
   position: absolute;
   left: 2rem;
-  top: -100vh;
+  /* top: -100vh; */
+  top: 7rem;
   width: calc(100% - 4rem);
   height: 50%;
   display: flex;
@@ -120,11 +121,15 @@ h2 {
   z-index: 3;
   padding: 4rem 0;
   transition: all 0.3s ease-out;
+  transform: scale(0);
+  transform-origin: top right;
 }
 
 .header__navigation--visible {
   top: 7rem;
+  transform: scale(1);
 }
+
 .triangle {
   width: 0;
   height: 0;
@@ -302,6 +307,7 @@ h2 {
     flex-direction: row;
     width: 50%;
     background-color: transparent;
+    transform: scale(1);
   }
   .triangle {
     display: none;
