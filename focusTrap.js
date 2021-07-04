@@ -18,16 +18,28 @@ export default class FocusTrap {
       this.currentFocusIndex++;
     }
   };
-
-  _focusNext(){ 
-    this._incrementFocusIndex();    
-    this._focus(this.currentFocusIndex);
-  };
+  _decrementFocusIndex(){
+    if(this.currentFocusIndex === 0){
+      this.currentFocusIndex = this.focusables.length -1;
+    }
+    else{
+      this.currentFocusIndex--;
+    }
+  }
   
   _focus(index){  
     this.focusables[index].focus();  
   };
 
+  _focusNext(){ 
+    this._incrementFocusIndex();    
+    this._focus(this.currentFocusIndex);
+  };
+  _focusPrevious(){
+    this._decrementFocusIndex();
+    this._focus(this.currentFocusIndex);
+  }
+  
   _handleMouseover(event){
     const index = this.focusables.findIndex(element => element === event.target);
     if(index >= 0){
@@ -39,7 +51,12 @@ export default class FocusTrap {
   _handleKeydown(event){
     if(event.key === "Tab"){
       event.preventDefault();
-      this._focusNext();
+      if(event.shiftKey){
+        this._focusPrevious();
+      } else{
+        this._focusNext();
+
+      }
     }
   };
 
