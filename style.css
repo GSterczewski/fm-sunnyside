@@ -283,6 +283,20 @@ h2 {
   fill: white;
 }
 
+.attribution {
+  margin: 4rem auto 0 auto;
+  color: var(--dark-moderate-cyan);
+  font-size: 0.8rem;
+}
+.attribution__link {
+  color: var(--dark-desaturated-cyan);
+  text-decoration: none;
+}
+.attribution__link:hover,
+.attribution__link:focus {
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
 }
 @media (min-width: 600px) {
