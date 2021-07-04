@@ -89,6 +89,17 @@ h2 {
 
 /* HEADER SECTION */
 
+.overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  z-index: 3;
+  display: none;
+}
+.overlay--visible {
+  display: block;
+}
 .header {
   padding: 2rem;
   color: white;
@@ -118,7 +129,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  z-index: 3;
+  z-index: 4;
   padding: 4rem 0;
   transition: all 0.3s ease-out;
   transform: scale(0);
